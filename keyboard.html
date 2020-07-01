@@ -45,61 +45,61 @@
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="Q"
-              onclick=""
+              onclick="Clicked('Q')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="W"
-              onclick=""
+              onclick="Clicked('W')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="E"
-              onclick=""
+              onclick="Clicked('E')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="R"
-              onclick=""
+              onclick="Clicked('R')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="T"
-              onclick=""
+              onclick="Clicked('T')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="Y"
-              onclick=""
+              onclick="Clicked('Y')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="U"
-              onclick=""
+              onclick="Clicked('U')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="I"
-              onclick=""
+              onclick="Clicked('I')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="O"
-              onclick=""
+              onclick="Clicked('O')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="P"
-              onclick=""
+              onclick="Clicked('P')"
             />
           </div>
 
@@ -108,55 +108,55 @@
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="A"
-              onclick=""
+              onclick="Clicked('A')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="S"
-              onclick=""
+              onclick="Clicked('S')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="D"
-              onclick=""
+              onclick="Clicked('D')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="F"
-              onclick=""
+              onclick="Clicked('F')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="G"
-              onclick=""
+              onclick="Clicked('G')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="H"
-              onclick=""
+              onclick="Clicked('H')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="J"
-              onclick=""
+              onclick="Clicked('J')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="K"
-              onclick=""
+              onclick="Clicked('K')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="L"
-              onclick=""
+              onclick="Clicked('L')"
             />
           </div>
 
@@ -172,43 +172,43 @@
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="Z"
-              onclick=""
+              onclick="Clicked('Z')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="X"
-              onclick=""
+              onclick="Clicked('X')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="C"
-              onclick=""
+              onclick="Clicked('C')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="V"
-              onclick=""
+              onclick="Clicked('V')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="B"
-              onclick=""
+              onclick="Clicked('B')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="N"
-              onclick=""
+              onclick="Clicked('N')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="M"
-              onclick=""
+              onclick="Clicked('M')"
             />
             <input
               type="button"
@@ -229,31 +229,39 @@
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value=","
-              onclick=""
+              onclick="Clicked(',')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="Space bar"
               style="width: 300px;"
-              onclick=""
+              onclick="Clicked(' ')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="."
-              onclick=""
+              onclick="Clicked('.')"
             />
             <input
               type="button"
               class="btn btn-outline-light text-dark btn-md"
               value="Enter"
-              onclick=""
+              onclick="Clicked('\n')"
             />
           </div>
         </div>
       </div>
     </center>
+    <script>
+      function Clicked(values) {
+        if (values == "\n") {
+          document.getElementById("result").value += "</br>";
+        }
+        document.getElementById("result").value += values;
+      }
+    </script>
     <!-- <script>
       //function that display value
       function dis(val) {
